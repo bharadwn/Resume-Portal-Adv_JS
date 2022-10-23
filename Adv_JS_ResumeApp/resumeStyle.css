@@ -1,0 +1,262 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.nav-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-top: 55px;
+  /* border: 2px solid black; */
+}
+
+.search {
+  /* margin-right: 23%; */
+  /* border: 2px solid yellow; */
+}
+
+.searchInput {
+  border: 2px solid black;
+  width: 250px;
+  height: 30px;
+  margin-left: 30%;
+}
+#next {
+  justify-content: right;
+  background-color: lightgray;
+  /* color: black; */
+  /* margin-left: 0%; */
+  /* border: 2px solid yellow; */
+}
+#prev {
+  justify-content: right;
+  margin-left: 18%;
+}
+
+#home {
+  justify-content: left;
+  margin-right: 10%;
+  /* border: 2px solid green; */
+}
+
+.item1 {
+  grid-area: header;
+  text-align: center;
+  /* background-color: #d1f6ef; */
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu main main";
+  gap: 1px;
+  padding: 1px;
+}
+
+.name {
+  grid-area: name;
+  /* border: 2px solid navy; */
+  height: 80px;
+  height: 100%;
+  padding-top: 50px;
+}
+.role {
+  grid-area: role;
+  /* border: 2px solid green; */
+  margin: 0;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.pic {
+  grid-area: pic;
+  /* border: 2px solid orange; */
+  grid-row: 1 / 3;
+
+  /* position: relative; */
+  /* width: 15%; */
+  /* margin-left: 100px; */
+}
+
+.resume-header-grid {
+  /* position: relative; */
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 600px 150px;
+  grid-template-areas:
+    " name pic "
+    " role pic ";
+
+  gap: 1px;
+  padding: 1px;
+  padding-left: 20%;
+  min-width: 60%;
+}
+/* .grid-container > div {
+  
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 100px;
+  
+} */
+
+.noDecorUL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.decorUL {
+  list-style-type: none;
+}
+
+/* li {
+  display: block;
+  text-decoration: none;
+}
+ */
+
+.li-value {
+  display: block;
+  text-align: right;
+}
+
+#user {
+  justify-content: left;
+  margin: 0;
+  margin-left: 250px;
+  /* border: 1pz solid orange; */
+  /* margin-right: 400px; */
+}
+
+#resume-header {
+  background-color: #d1f6ef;
+}
+#candidate-pic {
+  position: absolute;
+  margin-left: 8 00px;
+}
+
+.resume {
+  border: 1.5px solid black;
+  width: 1000px;
+  margin: auto;
+  justify-content: center;
+  min-width: 70%;
+}
+
+.name {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#candidate-pic {
+  position: relative;
+  justify-content: right;
+}
+
+.item2 {
+  background-color: #f8e3e2;
+  min-width: 10%;
+  width: 130px;
+  padding: 20px 20px;
+  margin: 20px;
+}
+
+.item2 .title {
+  background-color: #a9a9a9;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.item3 {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 55px;
+  margin-bottom: 0;
+}
+
+.item3 > .title {
+  font-size: larger;
+  font-weight: bold;
+}
+.work-exp > .title {
+  font-size: small;
+}
+
+.bodyFont {
+  font-size: 0.4cm;
+  text-align: justify;
+  /* font-stretch: condensed; */
+  /* font-weight: bold; */
+}
+
+#err {
+  width: 180px;
+  height: 163px;
+}
+.errMessage {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: xx-large;
+  position: relative;
+  /* border: 2px solid orange; */
+}
+
+.msg {
+  margin-left: 35%;
+  position: absolute;
+  top: 15%;
+  /* border: 2px solid darkblue; */
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 170px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume App</title>
+    <link rel="stylesheet" href="resumeStyle.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="nav-toolBar" class="nav-search">
+        <button name="home" id="home" enabled>Home</button>
+
+        <div class="search">
+          <input
+            type="search"
+            class="searchInput"
+            placeholder="Search for keyword to filter resume"
+            onchange=""
+          />
+        </div>
+        <!-- search -->
+
+        <button name="prev" id="prev" enabled>Prev</button>
+        <button name="next" id="next" enabled>Next</button>
+      </div>
+      <!-- nav-toolBar end -->
+      <div>
+        <div id="user">
+          <label for="login-user">User : </label
+          ><span class="login-user"></span>
+        </div>
+        <div class="resume">
+          <!-- <div class="resume-grid-container" id="resume"> -->
+          <!-- <div class="resume-header"> -->
+          <div class="grid-container">
+            <div class="item1" id="resume-header">
+              <div class="resume-header-grid">
+                <div id="candidate-name" class="name"></div>
+
+                <div class="role">
+                  <label for="candidate-role" class="role-title"
+                    >Applied For:
+                  </label>
+                  <span id="candidate-role"></span>
+                </div>
+                <!-- role -->
+                <div id="candidate-pic" class="pic"></div>
+              </div>
+              <!-- resume-header -->
+            </div>
+            <!-- item1 -->
+
+            <!-- <div class="side-bar"> -->
+            <div class="item2">
+              <ul class="noDecorUL">
+                <li><div class="title">Personal Information</div></li>
+                <li id="phone" class="li-value"></li>
+                <li id="email" class="li-value"></li>
+                <li id="urlLink" class="li-value"></li>
+
+                <li><div for="skills" class="title">Technical skills</div></li>
+                <li id="skills" class="li-value"></li>
+
+                <li><div class="title">Hobbies</div></li>
+                <li id="hobbies" class="li-value"></li>
+              </ul>
+            </div>
+            <!-- item2 -->
+            <!-- </navBar> -->
+
+            <!-- <div class="resume-body"> -->
+            <div class="item3">
+              <label class="title">Work Experience in previous company</label
+              ><br />
+              <ul class="work-exp decorUL">
+                <li for="companyName" class="bodyFont">
+                  <b>Company Name: </b><span id="companyName"></span>
+                </li>
+                <br />
+                <li for="position" class="bodyFont">
+                  <b>Position: </b><span id="position"></span>
+                </li>
+                <br />
+                <li for="startDate" class="bodyFont">
+                  <b>Start Date: </b><span id="startDate"></span>
+                </li>
+                <br />
+                <li for="endDate" class="bodyFont">
+                  <b>End Date: </b><span id="endDate"></span>
+                </li>
+                <br />
+                <li for="summary" class="bodyFont">
+                  <b>Summary: </b><span id="summary"></span>
+                </li>
+              </ul>
+              <br />
+
+              <label class="title">Projects</label><br />
+              <ul class="projects bodyFont"></ul>
+              <br />
+
+              <label class="title">Education</label><br />
+              <!-- <div class="education"><ul></ul></div> -->
+              <div class="education bodyFont"></div>
+              <br />
+
+              <label class="title">Internship</label><br />
+              <ul class="intership">
+                <li for="inCompanyName" class="bodyFont">
+                  <b>Company Name: </b><span id="inCompanyName"></span>
+                </li>
+                <li for="inPosition" class="bodyFont">
+                  <b>Position: </b><span id="inPosition"></span>
+                </li>
+                <li for="inStartDate" class="bodyFont">
+                  <b>Start Date: </b><span id="inStartDate"></span>
+                </li>
+                <li for="inEndDate" class="bodyFont">
+                  <b>End Date: </b><span id="inEndDate"></span>
+                </li>
+                <li for="inSummary" class="bodyFont">
+                  <b>Summary: </b><span id="inSummary"></span>
+                </li>
+              </ul>
+              <br />
+
+              <label class="title">Achievements</label><br />
+              <div class="achievements bodyFont"></div>
+              <br />
+            </div>
+            <!-- item3 -->
+          </div>
+          <!-- grid-container -->
+        </div>
+        <!--resume-->
+
+        <!-- Error modal -->
+        <div id="myModal" class="modal">
+          <!-- modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="errMessage">
+              <img id="err" src="./images/searchError.jpg" />
+              <p class="msg">No such results found.</p>
+            </div>
+            <!-- errmessage -->
+          </div>
+          <!-- modal-content -->
+        </div>
+        <!-- myModal -->
+      </div>
+    </div>
+    <!-- main -->
+  </body>
+
+  <script src="resumeData.js"></script>
+  <!-- <script src="resumeDestructuring.js"></script> -->
+</html>

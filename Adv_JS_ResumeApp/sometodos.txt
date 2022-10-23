@@ -1,0 +1,54 @@
+clear the change when prev and Next is pressed-DONE
+
+test for one record-DONE
+
+test for no records-DONE
+
+search button -filter option-DONE
+
+search betterify-DONE
+
+error on search-DONE
+
+error on login? DONE
+
+print invalid username /password-DONE
+
+on load: put the cursor on search window-DONE
+
+CSS -proper
+	search inoout-done
+	bold parts-done
+check all the features-done
+
+back button -betterify-done
+
+put the applicants icon on the side-done
+
+image: if available show
+or password encode
+POST method pass the JS in login.html
+username/password file
+-----------------------
+
+// Define the string
+var decodedStringBtoA = 'Hello World!';
+
+// Encode the String
+var encodedStringBtoA = btoa(decodedStringBtoA);
+
+console.log(encodedStringBtoA);
+
+Output
+SGVsbG8gV29ybGQh
+---------------------------
+
+// Define the string
+var encodedStringAtoB = 'SGVsbG8gV29ybGQh';
+
+// Decode the String
+var decodedStringAtoB = atob(encodedStringAtoB);
+
+console.log(decodedStringAtoB);
+---------
+OutputHello World!
