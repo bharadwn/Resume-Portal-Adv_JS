@@ -12,7 +12,7 @@ The user-id and passwords necessary to login, or else cannot go the Resume App.
 The userid and password is stored in the local storage...
 and can be accessed any time after login also
 
-Error-on wrond login
+Error-on wrong login
 
 Resume App
 ----------------------------------------------
